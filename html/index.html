@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My First Webpage</title>
+      <style>
+          body{
+            background: #f4f4f4;
+            font-family: arial;
+            line-height: 1.5em;
+          }
+
+          #container{
+            border:1px #cccccc solid;
+            padding: 0 10px 0 10px;
+            width: 800px;
+            margin:30px auto;
+            overflow:hidden;
+          }
+
+          .emp{
+            color:red;
+            font-weight: bold;
+          }
+
+          .side-a{
+            float:left;
+            width: 50%;
+          }
+          .side-b{
+            float:right;
+            width: 50%;
+          }
+      </style>
+    </head>
+    <body>
+        <h1>Headings</h1>
+
+        <h1>Welcome (h1)</h1>
+        <h2>Welcome (h1)</h2>
+        <h3>Welcome (h1)</h3>
+        <h4>Welcome (h1)</h4>
+        <h5>Welcome (h1)</h5>
+        <h6>Welcome (h1)</h6>
+
+        <br>
+
+        <h1>Paragraphs</h1>
+        <p>This is a paragraph</p>
+        <p>This is another <strong>paragraph</strong> of <i>text</i></p>
+
+        <br>
+
+        <h1>Links</h1>
+        <a title ="Link to the Google Website" href="http://google.com" target="_blank">Link To Google</a>
+
+        <br>
+
+        <h1>Images</h1>
+        <img src="http://lorempixel.com/400/200">
+
+        <br>
+
+        <h1>Unordered List</h1>
+
+        <u1>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+        </u1>
+
+        <h1>Ordered List</h1>
+        <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+        </ol>
+
+        <h1>Description List</h1>
+        <dl>
+              <dt>Coffee</dt>
+              <dd>Black hot drink</dd>
+              <dt>Milk</dt>
+              <dd>White cold drink</dd>
+
+        </dl>
+
+        <h1>Tables</h1>
+
+        <table>
+            <thead>
+                <tr align="left" bgcolor="green">
+                    <th width="300">Name</th>
+                    <th width="300">Email</th>
+                    <th width="300">Phone</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>jdoe@gmail.com</td>
+                    <td>555-555-5555</td>
+                </tr>
+                <tr>
+                    <td>Tom Doe</td>
+                    <td>tdoe@gmail.com</td>
+                    <td>555-555-5556</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <h1>Registration Form</h1>
+        <form action="POST" action="index.php">
+            <fieldset>
+                <legend>Account</legend>
+                <label>Name</label><br>
+                <input type="text" name="name" required>
+                <br><br>
+                <label>Email</label><br>
+                <input type="email" name="email">
+                <br><br>
+                <label>Password</label><br>
+                <input type="password" name="password">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>User Info</legend>
+                <label>Location</label><br>
+                <select name="location">
+                    <option value="MA">MA</option>
+                    <option value="CA" selected>CA</option>
+                    <option value="NY">NY</option>
+                </select>
+
+                <br><br>
+                <label>Gender</label><br>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <br><br>
+
+                <label>Interests</label><br>
+                <input type="checkbox" name="interests" value="Movies" checked>Movies
+                <input type="checkbox" name="interests" value="Music">Music
+                <input type="checkbox" name="interests" value="Sports" checked>Sports
+                <input type="checkbox" name="interests" value="Study">Study
+                <input type="checkbox" name="interests" value="Games">Games
+                <br><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+
+
+        </form>
+
+        <br>
+        <h1>Basic Styling</h1>
+        <div id="container">
+            <div class="side-a">
+                <h1>First Paragraph</h1> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium id ex et tristique. Donec tristique et justo a interdum. <span class="emp"> Ut felis risus, ultricies in placerat et, viverra quis ante. </span> Maecenas lacinia bibendum rhoncus. Nunc a orci tempor mauris fringilla finibus. <span class="emp"> </p>
+            </div>
+
+            <div class="side-b">
+                <h1>Second Paragraph</h1> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium id ex et tristique. Donec tristique et justo a interdum. <span class="emp"> Ut felis risus, ultricies in placerat et, viverra quis ante. </span> Maecenas lacinia bibendum rhoncus. Nunc a orci tempor mauris fringilla finibus. <span class="emp"> Phasellus vehicula metus eget scelerisque imperdiet.</span> Suspendisse consectetur nunc ac mauris commodo, id condimentum libero posuere. Donec aliquam tristique odio non auctor.</p>
+            </div>
+        </div>
+
+
+    </body>
+</html>

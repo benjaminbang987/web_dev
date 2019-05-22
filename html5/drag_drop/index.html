@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag & Drop</title>
+    <style>
+      #box{
+        width:640px;
+        height:143px;
+        padding:10px;
+        border:1px solid #ccc;
+      }
+
+    </style>
+    <script>
+        function allowDrop(ev){
+            ev.preventDefault(); // because we don't want it to go to a link or anything like that
+
+        }
+
+        function drag(ev){
+            ev.dataTransfer.setData("text", ev.target.id); // dataTransfer is object that is used to hold the data that's being dragged during drag and drop operation. Can hold one or more data items. Will set the data for that type.
+
+        }
+
+        function drop(ev){
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+      
+
+    </div>
+    <img id="drag1" src="logo.png" draggable="true" ondragstart="drag(event)"
+      width="640" height="143">
+
+    <h1 contenteditable="true">This text can be edited</h1>
+
+
+
+</body>
+</html>
